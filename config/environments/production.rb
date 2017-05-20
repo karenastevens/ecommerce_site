@@ -62,8 +62,8 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'radiant-castle-98320.herokuapp.com'
-  config.action_mailer.default_url_options = { host: http://localhost:3005 }
+  host = 'https://radiant-castle-98320.herokuapp.com'
+  config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
