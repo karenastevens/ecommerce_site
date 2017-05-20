@@ -1,8 +1,10 @@
 require 'test_helper'
 
-class UsersControllerTest < ActionDispatch::IntegrationTest
+class MessagesControllerTest < ActionDispatch::IntegrationTest
+  
+
   test "should get new" do
-    get login_path
+    get contact_path
     assert_response :success
   end
 

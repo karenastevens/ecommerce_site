@@ -126,6 +126,9 @@ footer {
 /* forms */
 
 input, textarea, select, .uneditable-input {
+  border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
