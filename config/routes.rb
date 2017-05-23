@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root 'static_pages#home'
-  get  '/products', to: 'static_pages#products'
+  get  '/products', to: 'products#index'
   get  '/about',    to: 'static_pages#about'
   get  '/contact',  to: 'messages#new'
   post '/contact',  to: 'messages#create'
@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   resources :users
   resources :messages, only: [:new, :create]
+  resources :products
 end
