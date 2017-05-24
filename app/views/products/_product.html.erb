@@ -1,0 +1,9 @@
+<li id="product">
+  <span><%= product.name %></span>
+  <span><%= product.price %></span>
+  <span><%= product.description %></span>
+  <% if logged_in? %>
+    <%= link_to "delete", product,   method: :delete,
+                                     data: { confirm: "Are you sure?"} %>
+  <% end %>
+</li>
